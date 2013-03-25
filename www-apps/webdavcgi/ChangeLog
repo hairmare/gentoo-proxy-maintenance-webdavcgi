@@ -1,0 +1,22 @@
+# ChangeLog for www-apps/webdavcgi
+# Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/webdavcgi/ChangeLog,v 1.4 2013/03/17 17:45:51 hwoarang Exp $
+
+  17 Mar 2013; Markos Chandras <hwoarang@gentoo.org> metadata.xml:
+  Add proxy-maintainers to metadata.xml
+
+  14 Jan 2013; Tiziano Müller <dev-zero@gentoo.org> webdavcgi-0.8.3.ebuild:
+  Reintroduce the WEBDAVWRAPPER variable as initially present to make it
+  configureable in the next version. Thanks to Christian Affolter (ebuild
+  maintainer) for all the work and testing.
+
+  11 Jan 2013; Tiziano Müller <dev-zero@gentoo.org> metadata.xml:
+  Add missing upstream remote-ids.
+
+*webdavcgi-0.8.3 (11 Jan 2013)
+
+  11 Jan 2013; Tiziano Müller <dev-zero@gentoo.org>
+  +files/0.8.3-logout-var-expansion.patch, +files/postinstall-en.txt,
+  +files/postinstall-webdavwrapper-en.txt, +files/reconfig,
+  +files/reconfig-suid, +metadata.xml, +webdavcgi-0.8.3.ebuild:
+  Initial commit, required for www-apps/webdavcgi.

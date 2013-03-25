@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories version="1.0">
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>proxy-maintenance-webdavcgi</name>
+    <description>Repo to track my proxy maintainers work against Gentoo for webdavcgi (and deps)</description>
+    <homepage>https://github.com/dev-zero/gentoo-proxy-maintenance-webdavcgi</homepage>
+    <owner>
+      <email>dev-zero@gentoo.org</email>
+      <name>Tiziano Müller</name>
+    </owner>
+    <source type="git">https://github.com/dev-zero/gentoo-proxy-maintenance-webdavcgi.git</source>
+  </repo>
+</repositories>
+

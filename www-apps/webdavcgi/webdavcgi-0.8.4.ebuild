@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-apps/webdavcgi/webdavcgi-0.8.3.ebuild,v 1.2 2013/01/14 08:22:33 dev-zero Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-apps/webdavcgi/webdavcgi-0.8.4.ebuild,v 1.1 2013/04/05 16:03:32 dev-zero Exp $
 
 EAPI=5
 
@@ -21,7 +21,8 @@ KEYWORDS="~amd64"
 IUSE="afs kerberos mysql postgres rcs samba +sqlite +suid"
 
 DEPEND=""
-RDEPEND="afs? ( net-fs/openafs )
+RDEPEND="!www-apps/webdavcgi:0
+	afs? ( net-fs/openafs )
 	dev-lang/perl
 	dev-perl/Archive-Zip
 	dev-perl/File-Copy-Link
@@ -56,7 +57,7 @@ src_compile() {
 
 		export WEBDAVWRAPPERS
 
-	    local wrapper
+		local wrapper
 		for wrapper in ${WEBDAVWRAPPERS}; do
 			$(tc-getCC) ${LDFLAGS} ${CFLAGS} \
 				-o "${CGIBINDIR}/${wrapper}" \

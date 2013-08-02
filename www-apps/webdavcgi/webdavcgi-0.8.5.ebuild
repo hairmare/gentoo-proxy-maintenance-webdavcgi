@@ -135,7 +135,7 @@ src_install() {
 	fperms 1777 "${THUMBNAILDIR}"
 
 	export APACHEEXAMPLECONFIG="apache-webdavcgi-${SLOT}-example.conf"
-	dodoc CHANGELOG TODO
+	dodoc CHANGELOG
 	dodoc "${FILESDIR}/${APACHEEXAMPLECONFIG}"
 	dohtml -r doc/*
 }

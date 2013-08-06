@@ -104,7 +104,7 @@ src_install() {
 
 	local installBaseDir="/usr/share/${PN}-${SLOT}"
 	local currentDir
-	for currentDir in htdocs lib locale; do
+	for currentDir in htdocs lib locale templates; do
 		insinto "${installBaseDir}/${currentDir}"
 		doins -r "${currentDir}"/*
 	done

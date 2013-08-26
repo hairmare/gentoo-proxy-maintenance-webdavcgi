@@ -2,6 +2,12 @@
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/www-apps/webdavcgi/ChangeLog,v 1.5 2013/04/05 16:03:32 dev-zero Exp $
 
+*webdavcgi-0.8.6 (26 Aug 2013)
+
+  26 Aug 2013; Christian Affolter <c.affolter@stepping-stone.ch>
+  +webdavcgi-0.8.6.ebuild:
+  Version bump to 0.8.6
+
 *webdavcgi-0.8.5 (30 Jul 2013)
 
   30 Jul 2013; Christian Affolter <c.affolter@stepping-stone.ch>

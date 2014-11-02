@@ -34,7 +34,7 @@ RDEPEND="afs? ( net-fs/openafs )
 	dev-perl/UUID-Tiny
 	dev-perl/XML-Simple
 	kerberos? ( virtual/krb5 )
-	media-gfx/graphicsmagick[perl]
+	>=media-gfx/graphicsmagick-1.3.19[perl]
 	mysql? ( dev-perl/DBD-mysql )
 	perl-core/Module-Load
 	postgres? ( dev-perl/DBD-Pg )
@@ -148,10 +148,6 @@ pkg_postinst() {
 	ewarn "group only."
 	ewarn "Thumbnail directory: ${THUMBNAILDIR}"
 	use sqlite && ewarn "SQLite directory:    ${SQLITEDIR}"
-
-	ewarn
-	ewarn "Until bug #456180 is fixed, you probably have to re-emerge"
-	ewarn "media-gfx/graphicsmagick"
 
 	elog
 	elog "The WebDAV CGI config is located at ${WEBDAVCONFIG}."
